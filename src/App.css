@@ -1,0 +1,967 @@
+@import "rsuite/dist/rsuite.css";
+
+.App {
+  text-align: center !important;
+}
+
+.App-logo {
+  height: 40vmin !important;
+  pointer-events: none !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear !important;
+  }
+}
+
+.App-header {
+  background-color: #282c34 !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: calc(10px + 2vmin) !important;
+  color: white !important;
+}
+
+.App-link {
+  color: #61dafb !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg) !important;
+  }
+
+  to {
+    transform: rotate(360deg) !important;
+  }
+}
+
+/*  */
+
+.custom-frame-overlay {
+  z-index: 2 !important;
+  object-fit: contain !important;
+  pointer-events: none !important;
+}
+
+.text-white-color {
+  color: "#fff" !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Poids différents */
+.inter-thin {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 100 !important;
+}
+
+.inter-light {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.inter-semibold {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.inter-extrabold {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 800 !important;
+}
+
+.inter-black {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 900 !important;
+}
+
+/* Styles italique */
+.inter-thin-italic {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 100 !important;
+  font-style: italic !important;
+}
+
+.inter-light-italic {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 300 !important;
+  font-style: italic !important;
+}
+
+.inter-regular-italic {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+}
+
+.inter-bold-italic {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+}
+
+.inter-black-italic {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 900 !important;
+  font-style: italic !important;
+}
+
+.text-outline {
+  font-size: 20px !important;
+  /* Taille du texte */
+  font-weight: bold !important;
+  /* Gras pour un meilleur effet */
+  color: #9b9b9b !important;
+  /* Rendre le texte transparent */
+  -webkit-text-stroke: 0.5px #9b9b9b !important;
+  /* Contour noir de 2px */
+}
+
+/* styles.css */
+
+/* Wrapper for the whole element */
+.position-wrapper {
+  position: absolute !important;
+  top: 0 !important;
+  start: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 3 !important;
+}
+
+/* Right Side Content */
+.right-side-content {
+  position: absolute !important;
+  height: 100% !important;
+  start: 0 !important;
+  color: white !important;
+  width: 45% !important;
+  max-width: 45% !important;
+  z-index: 4 !important;
+}
+
+/* Flex column for content */
+.flex-column-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  height: 100% !important;
+  padding: 1rem !important;
+}
+
+/* Logo */
+.logo-container {
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+  display: none !important;
+}
+
+.logo-container img {
+  height: 80px !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+
+/* Membership Details */
+.membership-title {
+  font-size: 50px !important;
+  font-weight: bold !important;
+  margin-bottom: 2rem !important;
+  text-align: center !important;
+  color: white !important;
+  display: none !important;
+}
+
+.membership-subtitle {
+  font-size: 11px !important;
+  font-weight: bold !important;
+  margin-bottom: 80px !important;
+  text-align: center !important;
+  color: white !important;
+  display: none !important;
+}
+
+.membre-container {
+  margin-bottom: 1rem !important;
+}
+
+.membre-container h3 {
+  font-size: 15px !important;
+  text-transform: uppercase !important;
+  padding: 0.5rem 2rem !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  color: white !important;
+  text-shadow: 2px 2px 5px black !important;
+}
+
+/* Date and time */
+.date-time-container {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin: 1.25rem 3rem !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+.date-time-container h3 {
+  font-size: 17px !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+/* Calendar and Clock Icons */
+.fa-calendar-alt,
+.fa-clock {
+  color: hsl(22, 100%, 64%) !important;
+}
+
+/* Comment */
+
+/* JKxhjqdfHFDSGRSDJFHRSDJFTGSDJTHFJQSD */
+
+.img-position {
+  position: absolute !important;
+  top: 123px !important;
+  right: 0px !important;
+  z-index: 1 !important;
+  padding-top: 102px !important;
+  /* max-height: 319px !important; */
+  width: 250px !important;
+  min-height: 319px !important;
+  display: block !important;
+  filter: grayscale(100%) !important;
+}
+
+.comment-container {
+  font-size: 12px !important;
+  text-break: word-wrap !important;
+  margin-top: 1rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.membre {
+  margin-top: 180px !important;
+}
+
+/* Member Name */
+.member-name {
+  /* font-size: 24px; */
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  color: white !important;
+  margin-top: 0 !important;
+}
+
+/* Member description */
+.member-description {
+  font-size: 11px !important;
+  color: white !important;
+  margin-top: 10px !important;
+  margin-bottom: 5rem !important;
+}
+
+/* Website Link */
+.website-link {
+  margin-top: auto !important;
+  margin-bottom: 1rem !important;
+}
+
+.website-link a {
+  font-weight: bold !important;
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.website-link .text-white-color {
+  color: white !important;
+}
+
+.info {
+  font-size: 12px !important;
+}
+
+.text-capitalize-sentences {
+  text-transform: lowercase !important;
+}
+
+.text-capitalize-sentences::first-letter {
+  text-transform: uppercase !important;
+}
+
+.btn-download {
+  background-color: #fe5435 !important;
+  border: #fe5435 !important;
+}
+
+@media screen and (min-width: 1155px) {
+  .img-position {
+    position: absolute !important;
+    top: 80px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    /* max-height: 319px !important; */
+    width: 250px !important;
+    min-height: 319px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+
+  .comment-container {
+    font-size: 12px !important;
+    text-break: word-wrap !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .membre {
+    margin-top: 150px !important;
+  }
+
+  /* Member Name */
+  .member-name {
+    /* font-size: 24px; */
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 0 !important;
+  }
+
+  .message-name {
+    font-size: 10px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 10px !important;
+  }
+
+  /* Member description */
+  .member-description {
+    font-size: 9px !important;
+    color: white !important;
+    margin-top: 10px !important;
+    margin-bottom: 5rem !important;
+  }
+
+  .comment-container {
+    font-size: 9px !important;
+    text-break: "word-wrap" !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .info {
+    font-size: 8px !important;
+  }
+
+  .fa-calendar-alt,
+  .fa-clock {
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (min-width: 987px) and (max-width: 1200px) {
+
+  /* Même style que précédemment */
+  .img-position {
+    position: absolute !important;
+    top: 80px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    /* max-height: 319px !important; */
+    width: 207px !important;
+    min-height: 319px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+
+  .membre {
+    margin-top: 150px !important;
+  }
+
+  .member-description {
+    font-size: 9px !important;
+    color: white !important;
+    margin-top: 10px !important;
+    margin-bottom: 5rem !important;
+  }
+
+  .fa-calendar-alt,
+  .fa-clock {
+    font-size: 10px !important;
+  }
+
+  .message-name {
+    font-size: 10px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 10px !important;
+  }
+
+  .comment-container {
+    font-size: 10px !important;
+    text-break: word-wrap !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .member-description {
+    font-size: 9px !important;
+    color: white !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+@media (width: 768px) {
+  .img-position {
+    position: absolute !important;
+    top: 215px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    /* max-height: 319px !important; */
+    width: 357px !important;
+    min-height: 556px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  /* Même style que précédemment */
+
+  .img-position {
+    position: absolute !important;
+    top: 210px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    max-height: 319px !important;
+    width: 358px !important;
+    min-height: 571px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+
+  .comment-container {
+    font-size: 15px !important;
+    text-break: word-wrap !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .membre {
+    margin-top: 280px !important;
+  }
+
+  /* Member Name */
+  .member-name {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 0 !important;
+  }
+
+  .fa-calendar-alt,
+  .fa-clock {
+    font-size: 14px !important;
+  }
+
+  .info {
+    font-size: 14px !important;
+  }
+
+  .message-name {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 25px !important;
+  }
+
+  .member-description {
+    font-size: 15px !important;
+    color: white !important;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  /* Même style que précédemment */
+
+  .img-position {
+    position: absolute !important;
+    top: 123px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    /* max-height: 319px !important; */
+    width: 286px !important;
+    min-height: 404px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+
+  .comment-container {
+    font-size: 12px !important;
+    text-break: word-wrap !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .membre {
+    margin-top: 207px !important;
+  }
+
+  /* Member Name */
+  .member-name {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 0 !important;
+  }
+
+  .fa-calendar-alt,
+  .fa-clock {
+    font-size: 12px !important;
+  }
+
+  .info {
+    font-size: 11px !important;
+  }
+
+  .message-name {
+    font-size: 13px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 15px !important;
+  }
+
+  .member-description {
+    font-size: 13px !important;
+    color: white !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media screen and (min-width: 536px) and (max-width: 575px) {
+  /* Même style que précédemment */
+
+  .img-position {
+    position: absolute !important;
+    top: 123px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    /* max-height: 319px !important; */
+    width: 286px !important;
+    min-height: 404px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+
+  .comment-container {
+    font-size: 12px !important;
+    text-break: word-wrap !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .membre {
+    margin-top: 207px !important;
+  }
+
+  /* Member Name */
+  .member-name {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 0 !important;
+  }
+
+  .fa-calendar-alt,
+  .fa-clock {
+    font-size: 12px !important;
+  }
+
+  .info {
+    font-size: 11px !important;
+  }
+
+  .message-name {
+    font-size: 13px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 15px !important;
+  }
+
+  .member-description {
+    font-size: 13px !important;
+    color: white !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Même style que précédemment */
+
+  .img-position {
+    position: absolute !important;
+    top: 123px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    max-height: 319px !important;
+    width: 250px !important;
+    min-height: 404px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+
+  .comment-container {
+    font-size: 12px !important;
+    text-break: word-wrap !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .membre {
+    margin-top: 180px !important;
+  }
+
+  /* Member Name */
+  .member-name {
+    font-size: 20px;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 0 !important;
+  }
+
+  .fa-calendar-alt,
+  .fa-clock {
+    font-size: 12px !important;
+  }
+
+  .info {
+    font-size: 11px !important;
+  }
+
+  .message-name {
+    font-size: 13px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 15px !important;
+  }
+
+  .member-description {
+    font-size: 11px !important;
+    color: white !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media screen and (min-width: 318px) and (max-width: 434px) {
+  .membre {
+    margin-top: 150px !important;
+  }
+
+  .member-description {
+    font-size: 10px !important;
+    color: white !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .img-position {
+    position: absolute !important;
+    top: 80px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    width: 207px !important;
+    min-height: 0px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+
+  .member-name {
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 10px !important;
+  }
+
+  .comment-container {
+    font-size: 11px !important;
+    text-break: "word-wrap" !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .info {
+    font-size: 10px !important;
+  }
+
+  .fa-calendar-alt,
+  .fa-clock {
+    font-size: 10px !important;
+  }
+
+  .message-name {
+    font-size: 10px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 13px !important;
+  }
+}
+
+@media screen and (min-width: 434px) and (max-width: 536px) {
+
+  .img-position {
+    position: absolute !important;
+    top: 30px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    /* max-height: 319px !important; */
+    width: 152px !important;
+    min-height: 248px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+
+  .comment-container {
+    font-size: 12px !important;
+    text-break: word-wrap !important;
+    margin-top: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .membre {
+    margin-top: 144px !important;
+  }
+
+  /* Member Name */
+  .member-name {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 0 !important;
+  }
+
+  .fa-calendar-alt,
+  .fa-clock {
+    font-size: 12px !important;
+  }
+
+  .info {
+    font-size: 11px !important;
+  }
+
+  .message-name {
+    font-size: 13px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    margin-top: 15px !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 433px) {
+  .membre {
+    margin-top: 132px !important;
+  }
+
+  .member-description {
+    font-size: 8px !important;
+    color: white !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .img-position {
+    position: absolute !important;
+    top: 31px !important;
+    right: 0px !important;
+    z-index: 1 !important;
+    padding-top: 102px !important;
+    width: 207px !important;
+    min-height: 0px !important;
+    display: block !important;
+    filter: grayscale(100%) !important;
+  }
+}
+
+
+h5, h3, h2 {
+  line-height: inherit;
+  font-size: inherit;
+}
+
+/* body {
+  color: var(--rs-text-primary) !important;
+  background-color: #f3f3f8 !important;
+} */
+
+/* App.css */
+
+/* Styles par défaut */
+body {
+  background-color: #f3f3f8 !important;;
+  color: #000;
+}
+
+/* Styles pour le mode sombre */
+body.dark-mode {
+  background-color: #000 !important;;
+  color: #fff;
+}
+
+.card-bg-fill {
+    background-color: #fff;
+}
+
+.card-bg-fill.dark-mode {
+    background-color: #131313;
+}
+
+
+.dark-mode .card{
+  background-color: #131313 !important;;
+  color: #fff;
+}
+
+
+.dark-mode .form-control {
+  display: block;
+  width: 100%;
+  padding: .5rem .9rem;
+  font-size: var(--vz-font-base);
+  font-weight: var(--vz-font-weight-normal);
+  line-height: 1.5;
+  color: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #333333;
+  background-clip: padding-box;
+  border: var(--vz-border-width) solid #656565;
+  border-radius: var(--vz-border-radius);
+  -webkit-transition: border-color .15sease-in-out, -webkit-box-shadow .15sease-in-out;
+  transition: border-color .15sease-in-out, -webkit-box-shadow .15sease-in-out;
+  transition: border-color .15sease-in-out, box-shadow .15sease-in-out;
+  transition: border-color .15sease-in-out, box-shadow .15sease-in-out, -webkit-box-shadow .15sease-in-out;
+}
+
+.dark-mode .rs-modal-content {
+  background-color: #292929;
+}
+
+/* .dt-paging-button {
+  position: relative;
+  display: block;
+  padding: var(--vz-pagination-padding-y) var(--vz-pagination-padding-x);
+  font-size: var(--vz-pagination-font-size);
+  color: var(--vz-pagination-color);
+  background-color: var(--vz-pagination-bg);
+  border: var(--vz-pagination-border-width) solid var(--vz-pagination-border-color);
+} */
+
+.dt-paging .pagination {
+  margin: 2px 0;
+  white-space: nowrap;
+  justify-content: flex-end;
+}
+
+.dt-paging-button.current {
+  z-index: 3;
+  color: var(--vz-pagination-active-color) !important;
+  background-color: var(--vz-pagination-active-bg) !important;
+  border-color: var(--vz-pagination-active-border-color) !important;
+}
+
+.rs-pagination-btn.rs-pagination-btn-active {
+  background-color: transparent;
+  border: 1px solid #1675e0;
+  border: 1px solid var(--rs-btn-ghost-border);
+  color: #1675e0;
+  color: var(--rs-btn-ghost-text);
+}
+
+
+#table-responsive nav{
+  margin-top: 5px;
+  float: right;
+}
+
+#table-responsive nav button {
+  color: #000 !important;
+  border: 1px solid #efefef;
+  padding: 5px 10px ;
+  border-radius: 5px ;
+  margin: 2px;
+}
+
+#table-responsive nav button.current {
+  color: #fff !important;
+  background-color: #fe7346 !important;
+}
+
+#eventTable thead tr{
+  color: #fff !important;
+  background-color: #fe7346 !important;
+  background: #fe7346 !important;
+}
+
+.dt-search{
+  float: right;
+  margin-bottom: 5px;
+}
