@@ -258,7 +258,7 @@ function App() {
 
                                   <div className={`${memberComment ? "d-flex  align-items-center gap-2" : "flex-column"}`}>
                                     <h3 className=" d-flex gap-2 m-0 text-white">
-                                      <FaCalendarAlt className="fa-calendar-alt" /> <span className='info inter-regular'>22/03/2024</span>
+                                      <FaCalendarAlt className="fa-calendar-alt" /> <span className='info inter-regular'>22/03/2025</span>
                                     </h3>
                                     <h3 className={`d-flex gap-2  text-white ${memberComment ? "m-0" : "mt-2"}`}>
                                       <FaClock className="fa-clock" /> <span className='info inter-regular'>10H00</span>
